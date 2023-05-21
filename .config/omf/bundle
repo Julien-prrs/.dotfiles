@@ -1,0 +1,8 @@
+package colored-man-pages
+package config
+package foreign-env
+package fzf
+package nvm
+package tmux-zen
+theme cbjohnson
+theme default
