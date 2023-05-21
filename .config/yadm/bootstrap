@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Submodules
+pushd $HOME > /dev/null
+yadm submodule update --init --recursive
+popd > /dev/null
+
+# bootstrap.d
 set -eu
 
 BOOTSTRAP_D="${BASH_SOURCE[0]}.d"
