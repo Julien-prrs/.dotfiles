@@ -11,3 +11,6 @@ if [ $? -ne 0 ]; then
       rm bat-musl_0.23.0_amd64.deb
    fi
 fi
+
+bat cache --build
+
