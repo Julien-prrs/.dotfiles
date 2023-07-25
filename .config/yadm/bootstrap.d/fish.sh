@@ -12,7 +12,7 @@ done
 
 if [ ! -z $PACKAGES_TO_INSTALL ]; then
    if [[ -f /etc/arch-release ]]; then
-      sudo pacman -S $PACKAGES_TO_INSTALL
+      sudo pacman -Syu --noconfirm $PACKAGES_TO_INSTALL
    elif [[ -f /etc/debian_version ]]; then
       sudo apt-get install $PACKAGES_TO_INSTALL
    fi
