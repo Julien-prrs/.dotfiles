@@ -22,6 +22,9 @@ if [ $? -ne 0 ]; then
 fi
 
 # Install NvChad if not already installed
-if [ ! -d "$HOME/.config/nvim" ]; then
-   git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+if [ ! -f "$HOME/.config/nvim/init.lua" ]; then
+   mv $HOME/.config/nvim/lua $HOME/nvim-config-lua.bak
+   git clone https://github.com/NvChad/NvChad $HOME/.config/nvim --depth 1
+   rsync -av $HOME/nvim-config-lua.bak/ $HOME/.config/nvim/lua
+   rm -rf $HOME/nvim-config-lua.bak
 fi
