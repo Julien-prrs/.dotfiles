@@ -7,7 +7,5 @@ if not set -q ZEN_SESSION_INITIALIZED
          set -x ZEN_SESSION_COLOR "#ff5722"
       case Arch
          set -x ZEN_SESSION_COLOR "#1793d1"
-      case Manjaro
-         set -x ZEN_SESSION_COLOR "#35bfa4"
    end
 end
