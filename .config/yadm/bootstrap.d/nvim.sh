@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REQUIRED_VERSION=0.9.0
+REQUIRED_VERSION=0.10.0
 APPIMAGES_INSTALL_DIR=$HOME/appimages
 
 type nvim &> /dev/null
@@ -24,7 +24,7 @@ fi
 # Install NvChad if not already installed
 if [ ! -f "$HOME/.config/nvim/init.lua" ]; then
    mv $HOME/.config/nvim/lua $HOME/nvim-config-lua.bak
-   git clone https://github.com/NvChad/NvChad $HOME/.config/nvim --depth 1
+   git clone https://github.com/NvChad/starter $HOME/.config/nvim
    rsync -av $HOME/nvim-config-lua.bak/ $HOME/.config/nvim/lua
    rm -rf $HOME/nvim-config-lua.bak
 fi

@@ -1,4 +1,4 @@
-local plugins = {
+return {
    {
       "NvChad/nvim-colorizer.lua",
       opts = {
@@ -30,5 +30,3 @@ local plugins = {
       },
    },
 }
-
-return plugins
