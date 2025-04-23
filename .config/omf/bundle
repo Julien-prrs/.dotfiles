@@ -1,4 +1,4 @@
-package colored-man-pages
+package colorman
 package config
 package foreign-env
 package fzf
