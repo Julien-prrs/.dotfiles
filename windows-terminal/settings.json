@@ -3,20 +3,30 @@
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": [
         {
-            "keys": "ctrl+c",
+            "id": "User.copy.644BA8F2",
             "command": {
                 "action": "copy",
                 "singleLine": false
             }
         },
         {
-            "keys": "ctrl+v",
+            "id": "User.paste",
             "command": "paste"
+        }
+    ],
+    "keybindings": [
+        {
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "User.paste",
+            "keys": "ctrl+v"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "newTabMenu": [
         {
             "type": "remainingProfiles"
@@ -45,11 +55,11 @@
             },
             {
                 "colorScheme": "Tokyo Night",
-                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
+                "guid": "{b98ae650-9979-5895-87a9-c00daf1c72fa}",
                 "hidden": false,
                 "icon": "C:\\WSL\\icon-arch-32.png",
                 "name": "Arch",
-                "source": "Windows.Terminal.Wsl"
+                "source": "Microsoft.WSL"
             },
             {
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
@@ -58,66 +68,19 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "name": "Cmd",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "hidden": false
+            },
+            {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
-            },
-            {
-                "commandline": "%SystemRoot%\\System32\\cmd.exe",
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "hidden": false,
-                "name": "Cmd"
             }
         ]
     },
     "schemes": [
-        {
-            "background": "#0C0C0C",
-            "black": "#0C0C0C",
-            "blue": "#0037DA",
-            "brightBlack": "#767676",
-            "brightBlue": "#3B78FF",
-            "brightCyan": "#61D6D6",
-            "brightGreen": "#16C60C",
-            "brightPurple": "#B4009E",
-            "brightRed": "#E74856",
-            "brightWhite": "#F2F2F2",
-            "brightYellow": "#F9F1A5",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#3A96DD",
-            "foreground": "#CCCCCC",
-            "green": "#13A10E",
-            "name": "Campbell",
-            "purple": "#881798",
-            "red": "#C50F1F",
-            "selectionBackground": "#FFFFFF",
-            "white": "#CCCCCC",
-            "yellow": "#C19C00"
-        },
-        {
-            "background": "#012456",
-            "black": "#0C0C0C",
-            "blue": "#0037DA",
-            "brightBlack": "#767676",
-            "brightBlue": "#3B78FF",
-            "brightCyan": "#61D6D6",
-            "brightGreen": "#16C60C",
-            "brightPurple": "#B4009E",
-            "brightRed": "#E74856",
-            "brightWhite": "#F2F2F2",
-            "brightYellow": "#F9F1A5",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#3A96DD",
-            "foreground": "#CCCCCC",
-            "green": "#13A10E",
-            "name": "Campbell Powershell",
-            "purple": "#881798",
-            "red": "#C50F1F",
-            "selectionBackground": "#FFFFFF",
-            "white": "#CCCCCC",
-            "yellow": "#C19C00"
-        },
         {
             "background": "#1E1D2E",
             "black": "#6E6C7E",
@@ -143,29 +106,6 @@
         },
         {
             "background": "#1A1B26",
-            "black": "#000000",
-            "blue": "#36A3D9",
-            "brightBlack": "#323232",
-            "brightBlue": "#68D5FF",
-            "brightCyan": "#C7FFFD",
-            "brightGreen": "#EAFE84",
-            "brightPurple": "#FFA3AA",
-            "brightRed": "#FF6565",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#FFF779",
-            "cursorColor": "#F29718",
-            "cyan": "#95E6CB",
-            "foreground": "#E6E1CF",
-            "green": "#B8CC52",
-            "name": "ayu",
-            "purple": "#F07178",
-            "red": "#FF3333",
-            "selectionBackground": "#253340",
-            "white": "#E6E8EF",
-            "yellow": "#E7C547"
-        },
-        {
-            "background": "#1A1B26",
             "black": "#414868",
             "blue": "#7AA2F7",
             "brightBlack": "#414868",
@@ -186,6 +126,30 @@
             "selectionBackground": "#28344A",
             "white": "#E6E8EF",
             "yellow": "#E0AF68"
+        },
+        {
+            "background": "#1A1B26",
+            "black": "#000000",
+            "blue": "#36A3D9",
+            "brightBlack": "#323232",
+            "brightBlue": "#68D5FF",
+            "brightCyan": "#C7FFFD",
+            "brightGreen": "#EAFE84",
+            "brightPurple": "#FFA3AA",
+            "brightRed": "#FF6565",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFF779",
+            "cursorColor": "#F29718",
+            "cyan": "#95E6CB",
+            "foreground": "#E6E1CF",
+            "green": "#B8CC52",
+            "name": "ayu",
+            "purple": "#F07178",
+            "red": "#FF3333",
+            "selectionBackground": "#253340",
+            "white": "#E6E8EF",
+            "yellow": "#E7C547"
         }
-    ]
+    ],
+    "themes": []
 }
