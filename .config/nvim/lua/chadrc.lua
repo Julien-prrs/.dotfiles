@@ -4,24 +4,13 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.options = {
-   shiftwidth = 3,
+M.base46 = {
+   theme = "tokyonight",
+   transparency = true,
 }
 
-M.ui = {
-	theme = "tokyonight",
-	transparency = true,
-   nvdash = {
-      load_on_startup = true,
-      header = {
-         "███╗   ██╗██╗   ██╗██╗███╗   ███╗",
-         "████╗  ██║██║   ██║██║████╗ ████║",
-         "██╔██╗ ██║██║   ██║██║██╔████╔██║",
-         "██║╚██╗██║╚██╗ ██╔╝██║██║╚██╔╝██║",
-         "██║ ╚████║ ╚████╔╝ ██║██║ ╚═╝ ██║",
-         "╚═╝  ╚═══╝  ╚═══╝  ╚═╝╚═╝     ╚═╝",
-      },
-   },
+M.nvdash = {
+   load_on_startup = true
 }
 
 return M
